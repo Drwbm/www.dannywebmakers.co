@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Danny Liche Web Makers — professional, modern, fast and secure website building.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
+  <title>Danny Liche Web Makers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Danny Liche Web Makers home">
+      <img src="images/logo.png" alt="Danny Liche Web Makers logo">
+    </a>
+    <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">☰</button>
+    <nav id="main-nav" class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#html">HTML</a>
+      <a href="#images">Images</a>
+      <a href="#settings">Settings</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-card">
+        <p class="eyebrow">PROFESSIONAL • MODERN • FAST • SECURE</p>
+        <h1>Websites built for your vision.</h1>
+        <p>Professional website design and development for businesses, services, portfolios and personal brands.</p>
+        <div class="actions">
+          <a class="button primary" href="#contact">Get a Website</a>
+          <a class="button secondary" href="#services">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>Website making services</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Business Websites</h3><p>Clean, responsive websites that help customers find your services and contact you.</p></article>
+        <article class="card"><h3>Responsive Design</h3><p>Layouts designed to work smoothly on phones, tablets and computers.</p></article>
+        <article class="card"><h3>HTML Development</h3><p>Lightweight HTML, CSS and JavaScript websites with no unnecessary dependencies.</p></article>
+        <article class="card"><h3>Security Best Practices</h3><p>Security-focused configuration, safer forms, restrictive browser policies and minimal third-party code.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2>Danny Liche Web Makers</h2>
+        <p>We create modern websites with a focus on clear design, mobile usability, performance and security-conscious development.</p>
+        <p><strong>Facebook:</strong> AngelDanny Liche</p>
+        <p><strong>Phone:</strong> <a href="tel:+260977388313">0977388313</a></p>
+        <p><strong>Email:</strong> <a href="mailto:drldanny@gmail.com">drldanny@gmail.com</a></p>
+      </div>
+      <img class="about-image" src="images/background.jpg" alt="Computer screen showing web development work" loading="lazy">
+    </section>
+
+    <section id="html" class="section dark-section">
+      <div class="section-heading">
+        <p class="eyebrow">HTML</p>
+        <h2>Clean website structure</h2>
+      </div>
+      <p>This site uses semantic HTML, a separate stylesheet and a separate JavaScript file. Keeping resources separated makes the project easier to maintain and review.</p>
+      <div class="code-box" aria-label="Example HTML structure">
+        <code>&lt;header&gt;...&lt;/header&gt;<br>
+&lt;main&gt;<br>
+&nbsp;&nbsp;&lt;section&gt;Your content&lt;/section&gt;<br>
+&lt;/main&gt;<br>
+&lt;footer&gt;...&lt;/footer&gt;</code>
+      </div>
+    </section>
+
+    <section id="images" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">IMAGES</p>
+        <h2>Brand &amp; development visuals</h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="images/logo.png" alt="Danny Liche Web Makers logo" loading="lazy"><figcaption>Official website logo</figcaption></figure>
+        <figure><img src="images/background.jpg" alt="Web development workspace" loading="lazy"><figcaption>Website development background</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="settings" class="section settings">
+      <div class="section-heading">
+        <p class="eyebrow">SETTINGS</p>
+        <h2>Customize your view</h2>
+      </div>
+      <div class="settings-panel">
+        <label><input id="darkMode" type="checkbox"> Dark mode</label>
+        <label><input id="largeText" type="checkbox"> Larger text</label>
+        <label><input id="reduceMotion" type="checkbox"> Reduce motion</label>
+        <button id="resetSettings" class="button secondary" type="button">Reset settings</button>
+      </div>
+      <p class="small">Settings are stored only in this browser using local storage. No account or password is required.</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-heading">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let's build your website</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Danny Liche Web Makers</h3>
+          <p><strong>Email:</strong> <a href="mailto:drldanny@gmail.com">drldanny@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+260977388313">0977388313</a></p>
+          <p><strong>Facebook:</strong> AngelDanny Liche</p>
+        </div>
+        <form class="contact-form" action="mailto:drldanny@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" maxlength="80" autocomplete="name" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" maxlength="1000" rows="5" required></textarea>
+          <button class="button primary" type="submit">Send Email</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Danny Liche Web Makers. All rights reserved.</p>
+    <p>Your vision, our creation.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
